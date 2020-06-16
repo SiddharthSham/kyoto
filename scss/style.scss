@@ -64,6 +64,9 @@ body {
     overflow-y: hidden;
     position: fixed;
     left: 0;
+}
+
+.scroll-content {
     will-change: transform;
 }
 
