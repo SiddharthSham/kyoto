@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto</title>
+    <link rel="shortcut icon" href="./static/small/10.jpg" type="image/x-icon">
+    <meta name="description" content="Experiment with animations">
+    <link rel="stylesheet" href="./scss/style.scss">
+    <script defer src="./js/main.js"></script>
+</head>
+
+<style>
+    #loader {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 10vw;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        z-index: 999999;
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div id="loader">
+        Loading...
+    </div>
+    <article class="mobile">
+        Please view on a larger screen
+    </article>
+    <div class="bg-pattern"></div>
+    <div class="scroll-wrapper">
+        <div id="scroll-content">
+            <main>
+                <section class="container hero">
+                    <nav class="nav">
+                        <h4 class="brand">kyoto</h4>
+                        <button class="nav-link nav-about" tabindex="1" data-scrollspy="about">about</button>
+                        <button class="nav-link nav-gallery" tabindex="2" data-scrollspy="gallery">gallery</button>
+                        <button class="nav-link nav-contact" tabindex="3" data-scrollspy="contact">contact</button>
+                    </nav>
+
+                </section>
+                <section id="about" class="container about">
+                    <article>
+                        <h1>MOVE</h1>
+                        <div class="image-container hero-image">
+                            <img src="./static/rsz_1.jpg" alt="hero">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odio facere, laborum
+                            quaerat commodi magnam voluptates error modi omnis magni debitis! Minus reprehenderit
+                            suscipit tempora, doloribus modi excepturi iusto non?</p>
+                    </article>
+                </section>
+                <section id="gallery" class="container gallery">
+                    <div class="image-cell image-container"><img src="./static/small/2.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/3.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/4.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/5.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/6.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/7.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/8.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/9.jpg" alt="japan"></div>
+                    <div class="image-cell image-container"><img src="./static/small/10.jpg" alt="japan"></div>
+                    <h4 class="center">Design</h4>
+                </section>
+                <section class="container"></section>
+                <section class="container"></section>
+            </main>
+            <footer id="contact">
+                <h1>HELLO</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ab ipsum eius, aspernatur
+                    commodi rerum eos incidunt eligendi harum necessitatibus, laboriosam architecto dicta at vel
+                    rem sint nesciunt exercitationem. Fugit.</p>
+            </footer>
+            <div class="banner">
+                <a href="https://siddharthsham.github.io">
+                    Designed & Developed by Siddharth
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

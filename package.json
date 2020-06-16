@@ -1,0 +1,19 @@
+{
+  "name": "koto",
+  "version": "1.0.0",
+  "description": "Experiments in animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "publish": "surge --domain=koto.surge.sh"
+  },
+  "keywords": [],
+  "author": "Siddharth S",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.8"
+  }
+}
