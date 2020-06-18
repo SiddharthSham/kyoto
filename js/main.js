@@ -11,7 +11,6 @@ import {
 window.addEventListener('load', () => {
     console.log(`[LOAD]`)
     document.getElementById('loader').remove()
-    // ungracefully prevent mobile devices from working
     if (config.width < 768) {
         return
     }

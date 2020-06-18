@@ -8,27 +8,34 @@ const scroller = () => {
 
     const body = document.body
     let scrollContent = document.getElementById('scroll-content')
-
-    // todo
+    body.style.height = `${scrollContent.scrollHeight}px`;
 
     window.addEventListener('scroll', () => {
-        // todo
+        curScroll = window.pageYOffset || document.documentElement.scrollTop
     }, {
         passive: true
     })
 
     window.addEventListener('resize', () => {
-        // todo
+        scrollContent = document.getElementById('scroll-content')
+        body.style.height = `${scrollContent.scrollHeight}px`;
     }, {
         passive: true
     })
 
     const scrollspy = () => {
-        // todo
+        const links = document.querySelectorAll('[data-scrollspy]')
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                let offset = document.getElementById(link.dataset.scrollspy).offsetTop
+                document.documentElement.scrollTop = offset
+            })
+        })
     }
 
     const render = () => {
-        // todo
+        targetScroll = lerp(targetScroll, curScroll, 0.1)
+        scrollContent.style.transform = `translate3d(0, ${-1*targetScroll}px, 1px)`;
         window.requestAnimationFrame(render)
     }
     scrollspy()
